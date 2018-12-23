@@ -6,3 +6,4 @@
 2. Queues
 3. minstack 
 4. Some recurrsion exercises
+5. Bubble sort
