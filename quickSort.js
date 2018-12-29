@@ -1,11 +1,11 @@
-function QuickSort(arr, li = 0, ri = arr.length - 1) {
+function quickSort(arr, li = 0, ri = arr.length - 1) {
   if (li > ri) return arr;
 
   let pivot = ri,
     partitionIndex = partition(arr, pivot, li, ri);
 
-  QuickSort(arr, li, partitionIndex - 1);
-  QuickSort(arr, partitionIndex + 1, ri);
+  quickSort(arr, li, partitionIndex - 1);
+  quickSort(arr, partitionIndex + 1, ri);
 
   return arr;
 }

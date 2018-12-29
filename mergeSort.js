@@ -1,7 +1,7 @@
-function mergeSort(array) {
-  if (array.length <= 1) return array;
-  let leftArray = array.slice(0, array.length/2);
-  let rightArray = array.slice(array.length/2, array.length+1);
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+  let leftArray = arr.slice(0, arr.length/2);
+  let rightArray = arr.slice(arr.length/2, arr.length+1);
   let lSorted = mergeSort(leftArray);
   let rSorted = mergeSort(rightArray);
   return merge(lSorted,rSorted);

@@ -1,18 +1,18 @@
-function selectionSort(array) {
-  if (array.length === 1) return array;
+function selectionSort(arr) {
+  if (arr.length === 1) return arr;
   let currMin, minIndex, temp;
-  for (let i = 0; i < array.length; i++) {
-    currMin = array[i];
+  for (let i = 0; i < arr.length; i++) {
+    currMin = arr[i];
     minIndex = i;
-    for (let j = i; j < array.length; j++) {
-      if (currMin > array[j]) {
-        currMin = array[j];
+    for (let j = i; j < arr.length; j++) {
+      if (currMin > arr[j]) {
+        currMin = arr[j];
         minIndex = j;
       }
     }
-    temp = array[i];
-    array[i] = currMin;
-    array[minIndex] = temp;
+    temp = arr[i];
+    arr[i] = currMin;
+    arr[minIndex] = temp;
   }
-  return array;
+  return arr;
 }

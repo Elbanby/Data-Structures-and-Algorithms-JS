@@ -1,16 +1,16 @@
-function insertionSort(array) {
-  if (array.length === 1) return array;
-  for (let i = 1 ; i < array.length ; i++) {
+function insertionSort(arr) {
+  if (arr.length === 1) return arr;
+  for (let i = 1 ; i < arr.length ; i++) {
     for (let j = i - 1 ; j >= 0 ; j--) {
-      if (array[j] > array[i]) {
-        let temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+      if (arr[j] > arr[i]) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
         i--;
       } else {
         break;
       }
     }
   }
-  return array;
+  return arr;
 }
